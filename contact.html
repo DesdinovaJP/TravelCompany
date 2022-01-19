@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/site.css" type="text/css" />
+    <script src = "JavaScript/scriptTravelCompany.js"></script>
+    <title>Contact | C&C Tours</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="tours.html">Tours</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside><img src="images/C&C_Logo4.jpg" alt="C&Ctours">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <button class="indexButton" onclick="location.href='tours.html'">View Tours</button>
+	    </aside>
+        <article>
+            <h1> Contact </h1>
+            <p>We are always glad to hear from you!</p>
+            <p>
+		    <a href="mailto:aidan36andjp32@gmail.com">Send us an email </a>or leave a message.
+            </p> 
+            <div id="log">
+            <form id="message" name= "message" action="mailto:aidan36andjp32@gmail.com" onsubmit="validateEmail(document.message.email.value)" >
+                <table>
+                    <tr>
+			            <td><b>Name</b></td> 
+			            <td><input type="text" size="60" required/></td>
+		            </tr>
+                    <tr>
+                        <td><b> Email </b></td>
+			            <td><input type="email" id="email" name="email" required placeholder="Enter your Email" onchange="validateEmail(document.message.email.value)"/> </td>
+                    </tr>
+                    <tr>
+			            <td><b>Message</b></td>
+			            <td> <textarea rows="7" cols="62" required></textarea>
+		            </tr>	
+                </table>
+                <input type="submit" id="submit" value="Submit" >
+            </form>
+        </div>
+        </article>
+    </main>
+    <footer>
+        <p id="copyright">
+            Copyright &copy; of C&C Tours
+        </p>
+    </footer>
+</body>
+</html>
